@@ -5,7 +5,7 @@ import pandas as pd
 # Number of Recommendations to show
 k = 5
 
-model = joblib.load("model.obj")
+model = joblib.load("frontend/model.obj")
 st.title("Song Recommendation")
 
 fields = {

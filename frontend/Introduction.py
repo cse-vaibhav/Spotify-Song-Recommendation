@@ -7,7 +7,7 @@ st.title("Song Recommendation")
 
 st.write(os.path.abspath("."))
 
-model = joblib.load("model.obj")
+model = joblib.load("frontend/model.obj")
 data: pd.DataFrame = model.data.drop("clusters", axis=1)
 
 # Dataframe preview
